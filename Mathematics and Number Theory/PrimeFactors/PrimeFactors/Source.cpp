@@ -23,8 +23,13 @@ void findPrimeFactors(int n)
 int main()
 {
 	int n = 0;
-	std::cout << "Enter a number: " << std::endl;
-	std::cin >> n;
-	findPrimeFactors(n);
+	int testCases = 0;
+	std::cin >> testCases;
+	while (testCases--) {
+		std::cout << "Enter a number: " << std::endl;
+		std::cin >> n;
+		findPrimeFactors(n);
+	}
+	
 	return 0;
 }
